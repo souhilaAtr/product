@@ -1,0 +1,16 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+    
+
+ {% for service in services %}
+
+ <img src="{{service.logo}}" alt="">
+ <h2>{{service.nom}}</h2>
+ <h3>{{service.createdAt|date("m/d/Y")}}</h3>
+    
+{% endfor %}
+
+
+
+{% endblock  %}

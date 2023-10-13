@@ -1,0 +1,11 @@
+{% extends "base.html.twig" %}
+{% block body %}
+
+{{form_start(fromulaire)}}
+{{form_widget(fromulaire)}}
+
+<button type="submit" class="btn btn-danger"> ajouter un produit </button>
+
+{{form_end(fromulaire)}}
+
+{% endblock %}
